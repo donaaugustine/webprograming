@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Read an i/p and print in a p tag</title>
+<style>body{font-size:30px;}</style>
+<script>
+function myFunction() {
+   var a=document.getElementById("myText").value;
+   document.getElementById("demo").innerHTML=a;
+}
+</script>
+</head>
+<body font-size="30px">
+Enter Your Name: <input type="text" id="myText" >
+<p id="demo">This is a paragraph</p>
+<button onclick="myFunction()">Try it</button>
+</body>
+</html>
+

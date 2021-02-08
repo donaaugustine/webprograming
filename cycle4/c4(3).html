@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Check whether the given no. is armstrong</title>
+</head>
+<body>
+<script>
+var sum = 0;
+const number = prompt('Enter a positive integer : ');
+var temp = number;
+while (temp > 0) 
+{
+  var remainder = temp % 10;
+  sum += remainder * remainder * remainder;
+  temp = parseInt(temp / 10);
+}
+if (sum == number) 
+{
+  alert("Armstrong number");
+}
+else 
+{
+  alert("Not an Armstrong number");
+}
+</script>
+</body>
+</html>
