@@ -1,0 +1,78 @@
+<html>
+<head>
+<style>
+h2 {
+font-size : 30px;
+color : blue;
+}
+p {
+font-size : 20px;
+color :black;
+font-weight : bold;
+} 
+</style>
+</head>
+
+<body>
+
+<u><h2>Math Functions</h2></u>
+<p>Ceil of 5.7 is : <span id="p1"></span><br>
+Floor of 5.7 is : <span id="p2"></span><br>
+Random Number is : <span id="p3"></span><br>
+3 to the power of 3 is : <span id="p4"></span><br> 
+Square Root of 81 is  : <span id="p5"></span><br>
+Round of 4.3 is : <span id="p6"></span><br>    
+Round of 4.7 is : <span id="p7"></span><br>
+Absolute value of -4 is : <span id="p8"></span><br>
+Minimum value is : <span id="p9"></span><br> 
+Maximum value is : <span id="p10"></span><br></p>
+
+<u><h2>String Functions</h2></u>
+<p>str.charAt(3) of 'Python' is : <span id="p11"></span><br>
+str.concat() [Python & is a simple language.]: <span id="p12"></span><br>
+str.indexOf(world) of Hello world is : <span id="p13"></span><br>
+str.toLowerCase() of 'Python' : <span id="p14"></span><br>
+str.toUpperCase() of 'Python' : <span id="p15"></span><br>
+str.slice(2,5) of abcdefgh : <span id="p16"></span><br>
+str.trim() : <span id="p17"></span><br>
+str.split() : <span id="p18"></span><br></p>
+   
+<script>    
+document.getElementById('p1').innerHTML=Math.ceil(5.7);  
+document.getElementById('p2').innerHTML=Math.floor(5.7);  
+document.getElementById('p3').innerHTML=Math.random();
+document.getElementById('p4').innerHTML=Math.pow(3,3);
+document.getElementById('p5').innerHTML=Math.sqrt(81);
+document.getElementById('p6').innerHTML=Math.round(4.3);   
+document.getElementById('p7').innerHTML=Math.round(4.7); 
+document.getElementById('p8').innerHTML=Math.abs(-4); 
+document.getElementById('p9').innerHTML=Math.min(-16,0,3,60,200);
+document.getElementById('p10').innerHTML=Math.max(-16,0,3,60,200);
+
+var str="Python";  
+document.getElementById('p11').innerHTML=str.charAt(3);
+var s1="Python";  
+var s2=" is a simple language.";  
+var s3=s1.concat(s2);  
+document.getElementById('p12').innerHTML=s3;  
+var str="Hello world";  
+var n=str.indexOf("world");  
+document.getElementById('p13').innerHTML=n;
+var x="Python toLowerCase";  
+var y=x.toLowerCase();  
+document.getElementById('p14').innerHTML=y;  
+var a="Python toUpperCase";  
+var b=a.toUpperCase();  
+document.getElementById('p15').innerHTML=b;  
+var p="abcdefgh";  
+var q=p.slice(2,5);  
+document.getElementById('p16').innerHTML=q;  
+var s="   javascript trim   ";  
+var t=s.trim();  
+document.getElementById('p17').innerHTML=t;  
+var str="Good morning to all";  
+document.getElementById('p18').innerHTML=str.split(" ");  
+</script>    
+
+</body>
+</html>
